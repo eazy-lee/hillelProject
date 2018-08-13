@@ -18,8 +18,8 @@ public class SeleniumMainPage {
         PageFactory.initElements(driver, this);
     }
 
-    public WikiSearchResultPage clickDownloadTab() {
+    public SeleniumDownloadtPage clickDownloadTab() {
         downloadTab.click();
-        return new WikiSearchResultPage(driver);
+        return new SeleniumDownloadtPage(driver);
     }
 }

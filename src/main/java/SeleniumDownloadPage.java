@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class SeleniumDownloadPage {
@@ -16,12 +15,7 @@ public class SeleniumDownloadPage {
         PageFactory.initElements(driver, this);
     }
 
-    public List<String> predefineListOfLanguages(){
-        List list = Arrays.asList(new String[] {"Java", "C#", "Ruby", "Python", "Javascript (Node)"});
-        return list;
-    }
-
-    public List<String> getListOfLanguages(){
+    public List<String> getListOfLanguages() {
         final List<String> searchResultText = new ArrayList<String>();
         for (WebElement searchResultItem: languagesList) {
             final String text = searchResultItem.getText();

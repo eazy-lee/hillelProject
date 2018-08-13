@@ -5,6 +5,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class HomeworkOne {
@@ -24,19 +26,20 @@ public class HomeworkOne {
         driver.get("https://ru.wikipedia.org/wiki/");
         final WikiMainPage mainPage = new WikiMainPage(driver);
         mainPage.typeSearchText("Java");
-        final WikiSearchResultPage searchResultPage = mainPage.clickFindButton();
+        final SeleniumDownloadtPage searchResultPage = mainPage.clickFindButton();
 
         Assert.assertEquals("Java", searchResultPage.getSearchResultTitle());
     }
 
     @Test
     public void verifySeleniumTable(){
+        List <String> list = Arrays.asList(new String[] {"Java", "C#", "Ruby", "Python", "Javascript (Node)"});
         driver.get("https://www.seleniumhq.org/");
         final SeleniumMainPage mainPage = new SeleniumMainPage(driver);
         mainPage.clickDownloadTab();
         final SeleniumDownloadPage downloadPage = new SeleniumDownloadPage(driver);
 
-        Assert.assertEquals(downloadPage.predefineListOfLanguages(), downloadPage.getListOfLanguages());
+        Assert.assertEquals(list, downloadPage.getListOfLanguages());
 //        Assert.assertTrue(downloadPage.predefineListOfLanguages().equals(downloadPage.getListOfLanguages()));
     }
 

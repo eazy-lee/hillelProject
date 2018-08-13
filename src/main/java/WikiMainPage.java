@@ -19,11 +19,14 @@ public class WikiMainPage {
     }
 
     public void typeSearchText(final String textToSearch) {
+
         searchInput.sendKeys(textToSearch);
     }
 
-    public WikiSearchResultPage clickFindButton() {
+    public SeleniumDownloadtPage clickFindButton() {
         searchButton.click();
-        return new WikiSearchResultPage(driver);
+        return new SeleniumDownloadtPage(driver);
     }
+
+
 }
