@@ -34,15 +34,17 @@ public class HotLineTestSuite {
 
         hotlineMainPage.mouseOverOnSamrtphonesMenuItem();
         hotlineMainPage.mouseOverOnsmartphonesMobilePhonesSmartwathesSubMunuItem();
-        hotlineMainPage.clickFindButton();
+        hotlineMainPage.clickOnSmartphonesAndMobilePhonesItem();
         hotlineSearchResultPage.clickOnSamsungCheckbox();
-        Thread.sleep(4000);
+        hotlineSearchResultPage.waitForFilterTitle();
+//        Thread.sleep(4000);
         hotlineSearchResultPage.clickOnsamsungGalaxyNote9Checkbox();
         hotlineSearchResultPage.clickOnsamsungGalaxyS8Checkbox();
         hotlineSearchResultPage.clickOnsamsungGalaxyS9Checkbox();
         hotlineSearchResultPage.clickOnCompareBtn();
-        assertEquals(hotlineSearchResultPage.getNumberOfCompareItems(),
-                "Смартфоны и мобильные телефоны: 3");
+        hotlineSearchResultPage.waitForComparePopUp();
+//        Thread.sleep(4000);
+        assertEquals("Смартфоны и мобильные телефоны: 3", hotlineSearchResultPage.getNumberOfCompareItems());
     }
 
     @After

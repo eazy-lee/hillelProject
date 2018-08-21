@@ -22,11 +22,9 @@ public class HotlineSearchResultPage {
 //    @FindBy(xpath = "//ul[contains(@class, 'products-list cell-list')]//i[contains(@class, 'check')]")
 //    private WebElement compareCheckbox;
 
-
     @FindBys
             (@FindBy(xpath = "//ul[contains(@class, 'products-list cell-list')]//i[contains(@class, 'check')]"))
     private List<WebElement> compareCheckbox;
-
 
     @FindBy(xpath = "(//label[contains(@class, 'checkbox-compare')])[1]")
     private WebElement samsungGalaxyNote9Checkbox;
@@ -42,6 +40,12 @@ public class HotlineSearchResultPage {
 
     @FindBy(xpath = "//a[contains(@href, 'cmp')]")
     private WebElement numberOfCompareItems;
+
+    @FindBy(xpath = "//div[contains(@class, 'heading')]")
+    private WebElement filterSearchTitle;
+
+    @FindBy(xpath = "//div[contains(@data-dropdown-id, 'compare')]")
+    private WebElement comparePopUp;
 
     private WebDriver driver;
     private WebDriverWait webDriverWait;
@@ -73,16 +77,25 @@ public class HotlineSearchResultPage {
     public void clickOnsamsungGalaxyS9Checkbox() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", samsungGalaxyS9Checkbox);
-
     }
 
     public void clickOnCompareBtn() {
         compareBtn.click();
     }
 
+    public void waitForFilterTitle() {
+        webDriverWait.until(ExpectedConditions.textToBePresentInElementLocated
+                (By.xpath("//div[contains(@class, 'heading')]"),
+                "Смартфоны и телефоны Samsung"));
+    }
+
     public String getNumberOfCompareItems() {
         String searchResultTitle = numberOfCompareItems.getText();
         return searchResultTitle;
+    }
+
+    public void waitForComparePopUp() {
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(comparePopUp));
     }
 
 
