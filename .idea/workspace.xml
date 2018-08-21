@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f3b44c7-ce2d-4954-8863-449afc49d052" name="Default" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/RozetkaMainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RozetkaSearchResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RozetkaCompareTabletsItems.java" afterDir="false" />
+    <list default="true" id="9f3b44c7-ce2d-4954-8863-449afc49d052" name="Default" comment="Implemented test for Rozetka search page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobject/HotlineMainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobject/HotlineSearchResultPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HotLineTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageobject/HotlineMainPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageobject/HotlineSearchResultPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageobject/RozetkaMainPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageobject/RozetkaSearchResultPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageobject/SeleniumDownloadPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageobject/SeleniumDownloadtPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageobject/WikiMainPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/HotLineTestSuite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/RozetkaCompareTabletsItems.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SeleniumDownloadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SeleniumDownloadPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SeleniumMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SeleniumMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WikiMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WikiMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WikiSearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SeleniumDownloadtPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RozetkaMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/RozetkaMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RozetkaSearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/RozetkaSearchResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SeleniumDownloadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/SeleniumDownloadPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SeleniumDownloadtPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/SeleniumDownloadtPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SeleniumMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/SeleniumMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WikiMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/WikiMainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HomeworkOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeworkOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SeleniumDownloadPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SeleniumDownloadPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WikiMainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WikiMainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RozetkaCompareTabletsItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RozetkaCompareTabletsItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SeleniumDownloadPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SeleniumMainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobject/SeleniumMainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WikiMainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WikiSearchResultPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/HomeworkOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomeworkOne.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,33 +41,38 @@
     <session id="-1507187142">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="11" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="11" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="15" />
-          <entry key="java" value="635" />
+          <entry key="java" value="2128" />
+          <entry key="txt" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="635" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="JAVA" value="2128" />
+          <entry key="PLAIN_TEXT" value="55" />
         </counts>
       </usages-collector>
     </session>
@@ -61,28 +80,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SeleniumMainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/HomeworkOne.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="41" column="69" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SeleniumMainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,51 +92,77 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SeleniumDownloadPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RozetkaMainPage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/WikiMainPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RozetkaSearchResultPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="43" column="73" selection-start-line="43" selection-start-column="73" selection-end-line="43" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RozetkaCompareTabletsItems.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SeleniumDownloadPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SeleniumDownloadtPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/RozetkaMainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/HotlineSearchResultPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1035">
+              <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1534712136749" expanded="true" signature="2228:2368" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/HotlineMainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="42" column="98" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HotLineTestSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -172,6 +199,12 @@
         <option value="$PROJECT_DIR$/src/main/java/RozetkaMainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/RozetkaSearchResultPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/RozetkaCompareTabletsItems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/HotlineSearchResultPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobject/WikiMainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobject/HotlineMainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobject/SeleniumDownloadtPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobject/HotlineSearchResultPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HotLineTestSuite.java" />
       </list>
     </option>
   </component>
@@ -183,7 +216,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="202" />
+    <option name="x" value="200" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
@@ -194,6 +227,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,54 +237,24 @@
               <item name="qa_framework_webdriver" type="b2602c69:ProjectViewProjectNode" />
               <item name="qa_framework_webdriver" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="qa_framework_webdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qa_framework_webdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qa_framework_webdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qa_framework_webdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qa_framework_webdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qa_framework_webdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qa_framework_webdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qa_framework_webdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qa_framework_webdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qa_framework_webdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534191832242" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534775738280" />
     <property name="last_opened_file_path" value="W:/CircusTalkAutotests" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Eazy-E\IdeaProjects\qa_framework_webdriver\src\test\java" />
+      <recent name="C:\Users\Eazy-E\IdeaProjects\qa_framework_webdriver\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Eazy-E\IdeaProjects\qa_framework_webdriver\src\test\java" />
@@ -267,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RozetkaCompareTabletsItems.testOne">
+  <component name="RunManager" selected="JUnit.HotLineTestSuite.verifyGoogleSearchFunctionality">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -296,6 +302,17 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomeworkOne" />
       <option name="METHOD_NAME" value="verifyWikyTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="qa_framework_webdriver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HotLineTestSuite" />
+      <option name="METHOD_NAME" value="verifyGoogleSearchFunctionality" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -352,9 +369,11 @@
       <item itemvalue="JUnit.HomeworkOne.verifyWikyTitle" />
       <item itemvalue="JUnit.RozetkaCompareTabletsItems.test" />
       <item itemvalue="JUnit.RozetkaCompareTabletsItems.testOne" />
+      <item itemvalue="JUnit.HotLineTestSuite.verifyGoogleSearchFunctionality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HotLineTestSuite.verifyGoogleSearchFunctionality" />
         <item itemvalue="JUnit.RozetkaCompareTabletsItems.testOne" />
         <item itemvalue="JUnit.RozetkaCompareTabletsItems.test" />
         <item itemvalue="JUnit.HomeworkOne.verifySeleniumTable" />
@@ -373,45 +392,53 @@
       <option name="presentableId" value="Default" />
       <updated>1533472487287</updated>
     </task>
+    <task id="LOCAL-00001" summary="Implemented test for Rozetka search page">
+      <created>1534191933400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534191933400</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 22h 53m 22s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 27m 30s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 22h 58m 03s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 28m 22s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 23h 04m 35s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 29m 51s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 23h 05m 40s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 30m 50s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 23h 06m 42s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 32m 22s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 23h 07m 31s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 36m 23s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 23h 08m 35s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 38m 17s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 23h 09m 33s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 56m 05s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 23h 21m 59s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.19 at 23h 57m 36s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RozetkaCompareTabletsItems_testOne - 2018.08.13 at 23h 23m 08s.xml">
-      <configuration name="RozetkaCompareTabletsItems.testOne" configurationId="JUnit" />
+    <history-entry file="HotLineTestSuite_verifyGoogleSearchFunctionality - 2018.08.20 at 00h 00m 00s.xml">
+      <configuration name="HotLineTestSuite.verifyGoogleSearchFunctionality" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13557047" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22818792" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -419,16 +446,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42657343" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31797752" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3048951" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31748253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921347" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.22921348" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.21258742" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32587412" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.25734267" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,29 +472,10 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Implemented test for Rozetka search page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented test for Rozetka search page" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/WikiMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SeleniumDownloadtPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="imports" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -478,56 +486,100 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/HomeworkOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="41" column="69" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SeleniumDownloadPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SeleniumMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RozetkaMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RozetkaSearchResultPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="43" column="73" selection-start-line="43" selection-start-column="73" selection-end-line="43" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="45" column="69" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RozetkaCompareTabletsItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="362">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/RozetkaSearchResultPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SeleniumMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/WikiMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SeleniumDownloadtPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/RozetkaMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/HotlineSearchResultPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1534712136749" expanded="true" signature="2228:2368" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/HotlineMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="98" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HotLineTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#1830#1831#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SeleniumDownloadPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

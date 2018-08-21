@@ -7,8 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pageobject.RozetkaMainPage;
+import pageobject.RozetkaSearchResultPage;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -47,7 +48,7 @@ public class RozetkaCompareTabletsItems {
 //    @Test
 //    public void test() throws InterruptedException {
 //        driver.get("https://rozetka.com.ua/");
-//        final RozetkaMainPage rozetka = new RozetkaMainPage(driver);
+//        final pageobject.RozetkaMainPage rozetka = new pageobject.RozetkaMainPage(driver);
 //        rozetka.clickOnNotebookItem();
 //        rozetka.clickOnTabletLink();
 //        rozetka.clickOnAllTabletsLink();

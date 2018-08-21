@@ -1,3 +1,5 @@
+package pageobject;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +14,6 @@ public class SeleniumDownloadtPage {
     }
 
     public String getSearchResultTitle() {
-
         String searchResultTitle = titleOfTheArticle.getText();
         return searchResultTitle;
     }
