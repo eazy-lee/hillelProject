@@ -1,10 +1,9 @@
 package pageobject;
 
-import org.openqa.selenium.By;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
@@ -35,38 +34,51 @@ public class HotlineSearchResultPage {
     @FindBy(xpath = "(//label[contains(@class, 'checkbox-compare')])[3]")
     private WebElement samsungGalaxyS9Checkbox;
 
+    @FindBy(xpath = "//li[contains(@class, 'product-item')]//a[contains(text(), 'Xiaomi Redmi Note 5 4/64GB Black')]")
+    private WebElement xiaomiRedmiNote5;
+
     @FindBy(xpath = "//div[contains(@data-dropdown-target, 'compare')]")
     private WebElement compareBtn;
 
     @FindBy(xpath = "//a[contains(@href, 'cmp')]")
     private WebElement numberOfCompareItems;
 
-    @FindBy(xpath = "//div[contains(@class, 'heading')]")
-    private WebElement filterSearchTitle;
+    @FindBy (xpath = "//a[contains(text() ,'Очистить список')]")
+    private WebElement clearListOfCompareBtn;
 
-    @FindBy(xpath = "//div[contains(@data-dropdown-id, 'compare')]")
-    private WebElement comparePopUp;
+    @FindBy (xpath = "//div[contains(@data-lazy-content, 'compare')]//p")
+    private WebElement textOfEmptyCompareBlock;
+
+    @FindBy(xpath = "//li[contains(@class, 'product-item')]//a[contains(text(), 'Xiaomi Redmi Note 5 4/64GB Black')]" +
+            "//..//..//..//..//div[contains(@class, 'item-price stick-bottom')]//a[contains(@class, 'btn-orange')]")
+    private WebElement xiaomiRedmiNote5CompareBtn;
+
+    @FindBy(xpath = "//li[contains(@class, 'product-item')]//a[contains(text(), 'Xiaomi Redmi Note 5 4/64GB Black')]" +
+            "//..//..//..//..//div[contains(@class, 'item-price stick-bottom')]//div[2]")
+    private WebElement xiaomiRedmiNote5MinMaxPrice;
+
+    @FindBy(xpath = "//span[@class='cell-md-none']")
+    private WebElement filterTextItem;
 
     private WebDriver driver;
     private WebDriverWait webDriverWait;
-//    private Actions actions;
 
     public HotlineSearchResultPage(final WebDriver driver) {
         this.driver = driver;
         webDriverWait = new WebDriverWait(driver, 30);
         PageFactory.initElements(driver, this);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        actions = new Actions(driver);
     }
 
     public void clickOnSamsungCheckbox() {
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(samsungCheckbox));
+        webDriverWait.until(ExpectedConditions.visibilityOf(samsungCheckbox));
         samsungCheckbox.click();
     }
 
     public void clickOnsamsungGalaxyNote9Checkbox() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", samsungGalaxyNote9Checkbox);
+        samsungGalaxyNote9Checkbox.click();
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        js.executeScript("arguments[0].click();", samsungGalaxyNote9Checkbox);
     }
 
     public void clickOnsamsungGalaxyS8Checkbox() {
@@ -83,28 +95,37 @@ public class HotlineSearchResultPage {
         compareBtn.click();
     }
 
-    public void waitForFilterTitle() {
-        webDriverWait.until(ExpectedConditions.textToBePresentInElementLocated
-                (By.xpath("//div[contains(@class, 'heading')]"),
-                "Смартфоны и телефоны Samsung"));
-    }
-
     public String getNumberOfCompareItems() {
-        String searchResultTitle = numberOfCompareItems.getText();
-        return searchResultTitle;
+        return numberOfCompareItems.getText();
     }
 
-    public void waitForComparePopUp() {
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(comparePopUp));
+    public void clearListOfCompare() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", clearListOfCompareBtn);
+//        webDriverWait.until(ExpectedConditions.elementToBeClickable(clearListOfCompareBtn));
+//        clearListOfCompareBtn.click();
     }
 
+    public String getTextOfEmptyCompareBlock() {
+        return textOfEmptyCompareBlock.getText();
+    }
 
-//    public void clickOnCompareBtnOnFirstThreeItems() {
-//
-//        for (WebElement elements : compareCheckbox) {
-//            elements.getSize();
-//            JavascriptExecutor js = (JavascriptExecutor) driver;
-//            js.executeScript("arguments[0].click();", elements);
-//        }
-//    }
+    public String getXiaomiRedmiNote5MinPrice() {
+        String minPrice = xiaomiRedmiNote5MinMaxPrice.getText();
+        return StringUtils.substringBeforeLast(minPrice, " – ");
+    }
+
+    public String getXiaomiRedmiNote5MaxPrice() {
+        String maxPrice = xiaomiRedmiNote5MinMaxPrice.getText();
+        return StringUtils.substringBetween(maxPrice," – "," грн");
+    }
+
+    public HotlineXiaomiRedmiNote5ViewPage clickOnXiaomiRedmiNote5CompareBtn() {
+        xiaomiRedmiNote5CompareBtn.click();
+        return new HotlineXiaomiRedmiNote5ViewPage(driver);
+    }
+
+    public void waitMerchToBeDisplayed() {
+        webDriverWait.until(ExpectedConditions.textToBePresentInElement(filterTextItem, "Отобрано"));
+    }
 }

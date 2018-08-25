@@ -43,7 +43,7 @@ public class HotlineMainPage {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(smartphonesMobilePhonesItem));
     }
 
-    public HotlineSearchResultPage clickOnSmartphonesAndMobilePhonesItem() {
+    public HotlineSearchResultPage clickOnsmartphonesMobilePhonesItem() {
         smartphonesMobilePhonesItem.click();
         return new HotlineSearchResultPage(driver);
     }
